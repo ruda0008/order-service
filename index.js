@@ -14,6 +14,7 @@ app.use(cors());
 const RABBITMQ_CONNECTION_STRING = process.env.RABBITMQ_CONNECTION_STRING || 'amqp://localhost';  // Fallback to localhost if not defined
 const PORT = process.env.PORT || 3000;  // Fallback to port 3000 if not defined
 
+//rwfsd
 // Define a POST route for creating orders
 app.post('/orders', (req, res) => {
   const order = req.body; // Extract the order data from the request body.
